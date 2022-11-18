@@ -96,11 +96,6 @@
           </q-toolbar>
         </div>
         <q-tab-panels v-model="selected" animated class="fit" keep-alive>
-          <q-tab-panel name="help" key="help" keep-alive>
-            <q-img
-              src="../assets/help.gif"
-            />
-          </q-tab-panel>
           <q-tab-panel v-for="tab in tabs" :name="tab.name" :key="tab.id" class="no-padding" keep-alive>
             <terminal :id="tab.id" :loginuser="tab.loginuser" :username="tab.username" :serverid="tab.serverid"
                       :password="tab.password" ref="terminal" v-if="tab.protocol === 'ssh'"

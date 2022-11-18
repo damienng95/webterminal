@@ -8,7 +8,6 @@
   <div class="header">
     <div id="logo"><img src="../assets/logo.png" width="192" height="30"></div>
     <div class="lag_select">
-      <a href="#" @click="lang = 'zh-hans'"><img src="../assets/ch.png" width="38" height="19" @click="lang = 'zh-hans'">CH</a>
       <a href="#" @click="lang = 'en-us'"><img src="../assets/en.png" width="38" height="19" @click="lang = 'zh-hans'">EN</a>
     </div>
   </div>
